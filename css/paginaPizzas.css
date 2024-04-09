@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/03/2024, 08:49:01 AM
+    Author     : pcgc7
+*/
+
+body { font-family: 'Open Sans', sans-serif; background-image: url('../imgPizzas/fondoPizzas_1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; }
+/*.colorFondo { background-color: rgba(0, 0, 0, 0.6); }*/
+
+/****************************** HEADER *****************************************/
+
+header { background-image: linear-gradient(to right, #fff 0%, #a12312 100%); z-index: 30; }
+.p-3 { padding: 1em !important; }
+.w-100 { width: 70% !important; }
+nav { flex-wrap: nowrap; justify-content: space-around; }
+nav ul li a { font-size: 1.25em !important; }
+.mx-4 { margin-left: 1em !important; margin-right: 1em !important; }
+
+/****************************** SECCION PRINCIPAL ******************************/
+
+.display-4 { font-size: 3em !important; }
+.pt-3 { padding-top: 1em !important; }
+.pb-5 { padding-bottom: 3em !important; }
+
+.py-5 { padding-top: 2.5em !important; padding-bottom: 2.5em !important; }
+.pt-5 { padding-top: 2.5em !important; }
+.mb-5 { margin-bottom: 2.5em !important; }
+.imgPizza { max-width: 65%; }  
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; } 
+p { font-size: 1em; }
+
+
+/****************************** MEDIA QUERIES ******************************/
+
+@media screen and (min-width: 1424px) and (max-width: 1647.98px) {
+
+    /****************************** HEADER *****************************************/
+
+    .p-3 { padding: 1em !important; }
+    .w-100 { width: 75% !important; }
+    nav ul li a { font-size: 1em !important; }
+    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
+
+    /****************************** SECCION PRINCIPAL ******************************/
+
+    .display-4 { font-size: 3em !important; }
+    .pt-3 { padding-top: 0.75em !important; }
+    .pb-5 { padding-bottom: 2.5em !important; }    
+    
+    .py-5 { padding-top: 2.25em !important; padding-bottom: 2.25em !important; }
+    .pt-5 { padding-top: 2.25em !important; }
+    .mb-5 { margin-bottom: 2.25em !important; }
+    .imgPizza { max-width: 65%; }  
+    h5 { font-size: 1.15em; }
+    h6 { font-size: 1em; } 
+    p { font-size: 0.9em; }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1423.98px) {
+    
+    /****************************** HEADER *****************************************/
+
+    .p-3 { padding: 1em !important; }
+    .w-100 { width: 80% !important; }
+    nav ul li a { font-size: 1em !important; }
+    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .px-4 { padding-left: 0.75em !important; padding-right: 0.75em !important; }
+
+    /****************************** SECCION PRINCIPAL ******************************/
+
+    .display-4 { font-size: 2.5em !important; }
+    .pt-3 { padding-top: 0.75em !important; }
+    .pb-5 { padding-bottom: 2em !important; }    
+    
+    .py-5 { padding-top: 2em !important; padding-bottom: 2em !important; }
+    .pt-5 { padding-top: 2em !important; }
+    .mb-5 { margin-bottom: 2em !important; }
+    .imgPizza { max-width: 75%; }  
+    h5 { font-size: 1em; }
+    h6 { font-size: 0.85em; } 
+    p { font-size: 0.8em; } 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+    /****************************** HEADER *****************************************/
+
+    .p-3 { padding: 0.75em !important; }
+    .w-100 { width: 85% !important; }
+    nav ul li a { font-size: 0.85em !important; }
+    .mx-4 { margin-left: 0.5em !important; margin-right: 0.5em !important; }
+    .px-4 { padding-left: 0.5em !important; padding-right: 0.5em !important; }
+
+    /****************************** SECCION PRINCIPAL ******************************/
+
+    .display-4 { font-size: 2em !important; }
+    .pt-3 { padding-top: 0.75em !important; }
+    .pb-5 { padding-bottom: 1.5em !important; }        
+    
+    .py-5 { padding-top: 1.75em !important; padding-bottom: 1.75em !important; }
+    .pt-5 { padding-top: 1.75em !important; }
+    .mb-5 { margin-bottom: 1.75em !important; }
+    .imgPizza { max-width: 75%; }  
+    h5 { font-size: 0.95em; }
+    h6 { font-size: 0.85em; } 
+    p { font-size: 0.8em; }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    /****************************** HEADER *****************************************/
+
+    .p-3 { padding: 0.75em !important; }  
+    .w-100 { width: 85% !important; }
+    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
+    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }
+    nav ul li a { font-size: 0.85em !important; }     
+    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
+    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }     
+    .btn { font-size: 2em; }
+    
+    /****************************** SECCION PRINCIPAL ******************************/
+
+    .display-4 { font-size: 2em !important; }
+    .pt-3 { padding-top: 0.5em !important; }
+    .pb-5 { padding-bottom: 1.75em !important; }    
+    
+    .py-5 { padding-top: 1.75em !important; padding-bottom: 1.75em !important; }
+    .pt-5 { padding-top: 1.75em !important; }
+    .mb-5 { margin-bottom: 1.75em !important; }
+    .imgPizza { max-width: 75%; }  
+    h5 { font-size: 0.95em; }
+    h6 { font-size: 0.85em; } 
+    p { font-size: 0.7em; } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    /****************************** HEADER *****************************************/
+
+    .p-3 { padding: 0.5em !important; }
+    .w-100 { width: 100% !important; }
+    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
+    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }    
+    nav ul li a { font-size: 0.7em !important; }        
+    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
+    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; } 
+    .btn { font-size: 1.5em; }
+
+    /****************************** SECCION PRINCIPAL ******************************/
+
+    .display-4 { font-size: 1.5em !important; }
+    .pt-3 { padding-top: 0.5em !important; }
+    .pb-5 { padding-bottom: 1.5em !important; } 
+    
+    .py-5 { padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
+    .pt-5 { padding-top: 1.5em !important; }
+    .mb-5 { margin-bottom: 1.5em !important; }
+    .imgPizza { max-width: 85%; }  
+    h5 { font-size: 0.85em; }
+    h6 { font-size: 0.75em; } 
+    p { font-size: 0.6em; } 
+}
+
+@media screen and (max-width: 575.98px) {
+    
+    /****************************** HEADER *****************************************/
+    
+    .p-3 { padding: 0.5em !important; }
+    .w-100 { width: 100% !important; }
+    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
+    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }    
+    nav ul li a { font-size: 0.7em !important; }        
+    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
+    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }    
+    .btn { font-size: 1.5em; }
+    
+    /****************************** SECCION PRINCIPAL ******************************/
+    
+    .display-4 { font-size: 1.5em !important; }
+    .pt-3 { padding-top: 0.5em !important; }
+    .pb-5 { padding-bottom: 1.25em !important; }     
+    .py-5 { padding-top: 1.25em !important; padding-bottom: 1.25em !important; }
+    .pt-5 { padding-top: 1.25em !important; }
+    .mb-5 { margin-bottom: 1.25em !important; }
+    .imgPizza { max-width: 85%; }  
+    h5 { font-size: 0.75em; }
+    h6 { font-size: 0.65em; } 
+    p { font-size: 0.5em; } 
+}
