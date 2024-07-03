@@ -11,185 +11,231 @@ and open the template in the editor.
 body { font-family: 'Open Sans', sans-serif; background-image: url('../imgPizzas/fondoPizzas_1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; }
 /*.colorFondo { background-color: rgba(0, 0, 0, 0.6); }*/
 
-/****************************** HEADER *****************************************/
-
+/* Encabezado */
 header { background-image: linear-gradient(to right, #fff 0%, #a12312 100%); z-index: 30; }
-.p-3 { padding: 1em !important; }
-.w-100 { width: 70% !important; }
-nav { flex-wrap: nowrap; justify-content: space-around; }
-nav ul li a { font-size: 1.25em !important; }
-.mx-4 { margin-left: 1em !important; margin-right: 1em !important; }
+header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+header .p-4 { padding: 1em !important; }
 
-/****************************** SECCION PRINCIPAL ******************************/
+/* Menú */
+.menu { display: flex; justify-content: center; border-top: none; }
+.menu ul { display: flex; flex-direction: row; }
+.menu ul li { font-size: 1em !important; margin: 0 2.5em; }
+.menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
 
+/* Sección principal */
 .display-4 { font-size: 3em !important; }
+.pt-4 { padding-top: 1.5em !important; } 
 .pt-3 { padding-top: 1em !important; }
-.pb-5 { padding-bottom: 3em !important; }
+.pb-5 { padding-bottom: 2.5em !important; }
+p { font-size: 1em; }
+.w-100 { width: 70% !important; }  
 
 .py-5 { padding-top: 2.5em !important; padding-bottom: 2.5em !important; }
 .pt-5 { padding-top: 2.5em !important; }
-.mb-5 { margin-bottom: 2.5em !important; }
-.imgPizza { max-width: 65%; }  
+ 
 h5 { font-size: 1.25em; }
-h6 { font-size: 1em; } 
-p { font-size: 1em; }
+h6 { font-size: 1em; }
 
 
 /****************************** MEDIA QUERIES ******************************/
 
 @media screen and (min-width: 1424px) and (max-width: 1647.98px) {
 
-    /****************************** HEADER *****************************************/
+    /* Encabezado */
+    header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+    header .p-4 { padding: 1em!important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 1em !important; margin: 0 2em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
 
-    .p-3 { padding: 1em !important; }
-    .w-100 { width: 75% !important; }
-    nav ul li a { font-size: 1em !important; }
-    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
-    .display-4 { font-size: 3em !important; }
-    .pt-3 { padding-top: 0.75em !important; }
-    .pb-5 { padding-bottom: 2.5em !important; }    
+    /* Sección principal */
+    .display-4 { font-size: 2.75em !important; }
+    .pt-4 { padding-top: 1.5em !important; }
+    .pt-3 { padding-top: 1em !important; }    
+    .pb-5 { padding-bottom: 2.25em !important; }
+    p { font-size: 1em; }
+    .w-100 { width: 70% !important; }    
     
     .py-5 { padding-top: 2.25em !important; padding-bottom: 2.25em !important; }
-    .pt-5 { padding-top: 2.25em !important; }
-    .mb-5 { margin-bottom: 2.25em !important; }
-    .imgPizza { max-width: 65%; }  
-    h5 { font-size: 1.15em; }
-    h6 { font-size: 1em; } 
-    p { font-size: 0.9em; }
+    .pt-5 { padding-top: 2.25em !important; }        
+    h5 { font-size: 1.1em; }
+    h6 { font-size: 0.85em; }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1423.98px) {
     
-    /****************************** HEADER *****************************************/
+    /* Encabezado */
+    header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+    header .p-4 { padding: 1em!important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 1em !important; margin: 0 1em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
 
-    .p-3 { padding: 1em !important; }
-    .w-100 { width: 80% !important; }
-    nav ul li a { font-size: 1em !important; }
-    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
-    .px-4 { padding-left: 0.75em !important; padding-right: 0.75em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
+    /* Sección principal */
     .display-4 { font-size: 2.5em !important; }
+    .pt-4 { padding-top: 1.5em !important; } 
     .pt-3 { padding-top: 0.75em !important; }
-    .pb-5 { padding-bottom: 2em !important; }    
+    .pb-5 { padding-bottom: 2em !important; }
+    p { font-size: 0.9em; }
+    .w-100 { width: 70% !important; } 
     
     .py-5 { padding-top: 2em !important; padding-bottom: 2em !important; }
-    .pt-5 { padding-top: 2em !important; }
-    .mb-5 { margin-bottom: 2em !important; }
-    .imgPizza { max-width: 75%; }  
-    h5 { font-size: 1em; }
-    h6 { font-size: 0.85em; } 
-    p { font-size: 0.8em; } 
+    .pt-5 { padding-top: 2em !important; }           
+    h5 { font-size: 0.95em; }
+    h6 { font-size: 0.85em; }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
-    /****************************** HEADER *****************************************/
+    /* Encabezado */
+    header .col-lg-4 { padding-left: 0; padding-right: 0; max-width: 20%; }
+    header .p-4 { padding: 1em!important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 0.85em !important; margin: 0 0.7em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
 
-    .p-3 { padding: 0.75em !important; }
-    .w-100 { width: 85% !important; }
-    nav ul li a { font-size: 0.85em !important; }
-    .mx-4 { margin-left: 0.5em !important; margin-right: 0.5em !important; }
-    .px-4 { padding-left: 0.5em !important; padding-right: 0.5em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
-    .display-4 { font-size: 2em !important; }
+    /* Sección principal */
+    .display-4 { font-size: 2.25em !important; }
+    .pt-4 { padding-top: 1.5em !important; }
     .pt-3 { padding-top: 0.75em !important; }
-    .pb-5 { padding-bottom: 1.5em !important; }        
+    .pb-5 { padding-bottom: 1.75em !important; }
+    p { font-size: 0.85em; }
+    .w-100 { width: 70% !important; }
     
     .py-5 { padding-top: 1.75em !important; padding-bottom: 1.75em !important; }
-    .pt-5 { padding-top: 1.75em !important; }
-    .mb-5 { margin-bottom: 1.75em !important; }
-    .imgPizza { max-width: 75%; }  
-    h5 { font-size: 0.95em; }
-    h6 { font-size: 0.85em; } 
-    p { font-size: 0.8em; }  
+    .pt-5 { padding-top: 1.75em !important; }          
+    h5 { font-size: 0.85em; }
+    h6 { font-size: 0.85em; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
 
-    /****************************** HEADER *****************************************/
-
-    .p-3 { padding: 0.75em !important; }  
-    .w-100 { width: 85% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }
-    nav ul li a { font-size: 0.85em !important; }     
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }     
-    .btn { font-size: 2em; }
+    /* Encabezado */
+    header .col-md-4 { padding-left: 0; padding-right: 0; max-width: 25%; }
+    header .p-4 { padding: 0.75em!important; }
     
-    /****************************** SECCION PRINCIPAL ******************************/
-
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.75em; }    
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: row; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.8em !important; margin: 0 1em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+    
+    /* Sección principal */
     .display-4 { font-size: 2em !important; }
-    .pt-3 { padding-top: 0.5em !important; }
-    .pb-5 { padding-bottom: 1.75em !important; }    
+    .pt-4 { padding-top: 1.5em !important; }
+    .pt-3 { padding-top: 0.75em !important; }
+    .pb-5 { padding-bottom: 1.5em !important; }
+    p { font-size: 0.75em; }
     
-    .py-5 { padding-top: 1.75em !important; padding-bottom: 1.75em !important; }
-    .pt-5 { padding-top: 1.75em !important; }
-    .mb-5 { margin-bottom: 1.75em !important; }
-    .imgPizza { max-width: 75%; }  
-    h5 { font-size: 0.95em; }
+    .py-5 { padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
+    .pt-5 { padding-top: 1.5em !important; }            
+    h5 { font-size: 0.85em; }
     h6 { font-size: 0.85em; } 
-    p { font-size: 0.7em; } 
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
 
-    /****************************** HEADER *****************************************/
-
-    .p-3 { padding: 0.5em !important; }
-    .w-100 { width: 100% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }    
-    nav ul li a { font-size: 0.7em !important; }        
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; } 
-    .btn { font-size: 1.5em; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
-    .display-4 { font-size: 1.5em !important; }
-    .pt-3 { padding-top: 0.5em !important; }
-    .pb-5 { padding-bottom: 1.5em !important; } 
+    /* Encabezado */
+    header .col-sm-6 { padding-left: 0; padding-right: 0; max-width: 30%; }
+    header .p-4 { padding: 0.75em !important; }
     
-    .py-5 { padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
-    .pt-5 { padding-top: 1.5em !important; }
-    .mb-5 { margin-bottom: 1.5em !important; }
-    .imgPizza { max-width: 85%; }  
-    h5 { font-size: 0.85em; }
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.75em; }    
+    
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.7em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+
+    /* Sección principal */
+    .display-4 { font-size: 1.75em !important; }
+    .pt-4 { padding-top: 1em !important; }
+    .pt-3 { padding-top: 0.5em !important; }
+    .pb-5 { padding-bottom: 1.25em !important; }
+    p { font-size: 0.6em; }
+    
+    .py-5 { padding-top: 1.25em !important; padding-bottom: 1.25em !important; }
+    .pt-5 { padding-top: 1.25em !important; }            
+    h5 { font-size: 0.75em; }    
     h6 { font-size: 0.75em; } 
-    p { font-size: 0.6em; } 
+    
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (min-width: 481px) and (max-width: 575.98px) {
     
-    /****************************** HEADER *****************************************/
+    /* Encabezado */
+    header .col-sm-6 { padding-left: 0; padding-right: 0; max-width: 30%; }
+    header .p-4 { padding: 0.75em !important; }
     
-    .p-3 { padding: 0.5em !important; }
-    .w-100 { width: 100% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }    
-    nav ul li a { font-size: 0.7em !important; }        
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }    
-    .btn { font-size: 1.5em; }
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.75em; }    
     
-    /****************************** SECCION PRINCIPAL ******************************/
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.7em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
     
+    /* Sección principal */
     .display-4 { font-size: 1.5em !important; }
+    .pt-4 { padding-top: 1em !important; }
     .pt-3 { padding-top: 0.5em !important; }
-    .pb-5 { padding-bottom: 1.25em !important; }     
-    .py-5 { padding-top: 1.25em !important; padding-bottom: 1.25em !important; }
-    .pt-5 { padding-top: 1.25em !important; }
-    .mb-5 { margin-bottom: 1.25em !important; }
-    .imgPizza { max-width: 85%; }  
-    h5 { font-size: 0.75em; }
+    .pb-5 { padding-bottom: 1em !important; }
+    p { font-size: 0.5em; }
+    
+    .py-5 { padding-top: 1em !important; padding-bottom: 1em !important; }
+    .pt-5 { padding-top: 1em !important; }           
+    h5 { font-size: 0.65em; }
     h6 { font-size: 0.65em; } 
-    p { font-size: 0.5em; } 
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    /* Encabezado */
+    header .col-6 { padding-left: 0; padding-right: 0; max-width: 40%; }
+    header .p-4 { padding: 0.75em !important; }
+    
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.5em; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.6em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+    
+    /* Sección principal */
+    .display-4 { font-size: 1.5em !important; }
+    .pt-4 { padding-top: 1em !important; }
+    .pt-3 { padding-top: 0.5em !important; }
+    .pb-5 { padding-bottom: 1em !important; }
+    p { font-size: 0.5em; }
+    
+    .py-5 { padding-top: 1em !important; padding-bottom: 1em !important; }
+    .pt-5 { padding-top: 1em !important; }           
+    h5 { font-size: 0.65em; }
+    h6 { font-size: 0.65em; }    
 }

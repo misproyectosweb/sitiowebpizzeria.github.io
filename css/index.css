@@ -10,58 +10,54 @@ and open the template in the editor.
 
 body { font-family: 'Open Sans', sans-serif; }
 
-/****************************** HEADER *****************************************/
-
+/* Encabezado */
 header { background-image: linear-gradient(to right, #fff 0%, #a12312 100%); box-shadow: 0 0.75em 0.75em 0 rgba(0,0,0,0.5); z-index: 30; }
-.p-3 { padding: 1em !important; }
-.w-100 { width: 70% !important; }
-nav { flex-wrap: nowrap; justify-content: space-around; }
-nav ul li a { font-size: 1.25em !important; }
-.mx-4 { margin-left: 1em !important; margin-right: 1em !important; }
+header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+header .p-4 { padding: 1em !important; }
 
-/****************************** SECCION PRINCIPAL ******************************/
+/* Menú */
+.menu { display: flex; justify-content: center; border-top: none; }
+.menu ul { display: flex; flex-direction: row; }
+.menu ul li { font-size: 1em !important; margin: 0 2.5em; }
+.menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
 
 /* Inicio */
 .imagenFondo { background-image: url('../imgInicio/fondoInicio.jpg'); background-size: cover; min-height: 100vh; padding-top: 2rem; }
-.jumbotron { padding: 2em !important; margin-bottom: 1em !important; margin-left: 1.5em !important; margin-right: 1.5em !important; }
+.fondoCaption { right: 12.5%; bottom: 0; left: 12.5%; padding: 16em 2em 3em 2em; background-color: rgba(0,0,0,0.5); }
+.colorFondo { background-color: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; }
+.jumbotron { padding: 2em !important; margin-bottom: 3em !important; margin-left: 2em !important; margin-right: 2em !important; }
 .jumbotron .display-4 { font-size: 3em !important; }
 .jumbotron .lead { font-size: 1.5em !important; }
 .inicio .p-3 { padding: 1em !important; }
-.fondoCaption { right: 12.5%; bottom: 0; left: 12.5%; padding: 16em 2em 3em 2em; background-color: rgba(0,0,0,0.5); }
-.colorFondo { background-color: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; }
+
 
 /* Especialidades */
-.card-body h5 { font-size: 1.5em; }
-.card-text { font-size: 1em !important; }
-.especialidades h1 { font-size: 2.4em; }
-.col-xl-4 { max-width: 15%; }
+.especialidades h1 { font-size: 2.5em; }
+.card { width: 15% !important; }
+.card-title { font-size: 1.25em !important; }
+.card-text { font-size: 0.85em !important; }
+.card-footer .btn { font-size: 1em; }
 
 /* Historia */
-.historia, .encabezado { background-image: linear-gradient(to left, #fff 0%, #a12312 100%); }
-.historia h2 { font-size: 2em; }
-.historia .mb-5 { margin-bottom: 1.5em!important }    
-.figure-caption { font-size: 90% !important;}
+.historia { background-image: linear-gradient(to left, #fff 0%, #a12312 100%); }
+.historia h1 { font-size: 2.5em; }
+.historia h2 { font-size: 1.75em; }
 .historia p { font-size: 1em; }
-.historia h1 { font-size: 2.35em; }
+.imgHistoria { width: 95%; }
 
-/* Comentarios y carrusel de imagenes */
-h1 { font-size: 2.5em; }
-h4 { font-size: 1.5em; }        
-.py-4 { padding-top: 1em!important; padding-bottom: 1em !important; }
-.pb-4 { padding-bottom: 1.5em!important; }
-label { font-size: 0.8em !important; }
-.boton { font-size: 1em; }
-.carrusel p { font-size: 1em; }
-.carrusel.py-5 { padding-top: 1.5em!important; padding-bottom: 1.5em !important; }
-.carrusel .my-4 { margin-top: 1em !important; margin-bottom: 1em !important; }            
-.imgPersona { width: 15%; }
-
-/****************************** PIE DE PAGINA *****************************/
+/* Comentarios */
+.tcomentarios h1 { font-size: 2.5em; }
+.tcomentarios h4 { font-size: 1.5em; }
+label { font-size: 0.85em !important; }
+.comentarios .btn { font-size: 0.85em; }
+.imgPersona { width: 15% !important; }
 
 /* Pie de página */
-footer a, footer ul li, .copyright { font-size: 0.85em!important; }
-footer h5 { font-size: 1.25em!important; }
-.p-4 { padding: 1.5em!important; }
+footer h5 { font-size: 1.25em !important; }
+footer a, footer ul li, .copyright { font-size: 0.8em !important; }
+footer .p-4 { padding: 1.25em !important; }
+footer .py-3 { padding-top: 0.75em !important; padding-bottom: 0.75em !important; }
+
 
 /*********************** Estilos para las validaciones en PHP *****************/
 
@@ -78,309 +74,336 @@ footer h5 { font-size: 1.25em!important; }
 
 @media screen and (min-width: 1424px) and (max-width: 1647.98px) {
 
-    /****************************** HEADER *****************************************/
-
-    .p-3 { padding: 1em !important; }
-    .w-100 { width: 75% !important; }
-    nav ul li a { font-size: 1em !important; }
-    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
-    .px-4 { padding-left: 0.75em !important; padding-right: 0.75em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
-    /* Inicio */        
-    .jumbotron { padding: 1.75em !important; margin-bottom: 0.5em !important; margin-left: 1.5em !important; margin-right: 1.5em !important; }
-    .jumbotron .display-4 { font-size: 2.5em !important; }
-    .jumbotron .lead { font-size: 1em !important; }
-    .inicio .p-3 { padding: 1em !important; }
+    /* Encabezado */
+    header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+    header .p-4 { padding: 1em!important; }
     
-    /* Especialidades */    
-    .card-body h5 { font-size: 1.25em; }
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 1em !important; margin: 0 2em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    
+    /* Inicio */        
+    .jumbotron { padding: 1em !important; margin-bottom: 3em !important; margin-left: 1em !important; margin-right: 1em !important; }
+    .jumbotron .display-4 { font-size: 2.75em !important; }
+    .jumbotron .lead { font-size: 1.25em !important; }
+    .inicio .p-3 { padding: 0.75em !important; }
+    
+    /* Especialidades */
+    .especialidades h1 { font-size: 2.5em; }
+    .card { width: 15% !important; }
+    .card-title { font-size: 1.25em !important; }
     .card-text { font-size: 0.85em !important; }
-    .especialidades h1 { font-size: 2.4em; }
-    .col-xl-4 { max-width: 15%; }
+    .card-footer .btn { font-size: 1em; }
     
     /* Historia */
+    .historia h1 { font-size: 2.5em; }
     .historia h2 { font-size: 1.75em; }
-    .historia .mb-5 { margin-bottom: 1.5em!important }    
-    .figure-caption { font-size: 90% !important;}
     .historia p { font-size: 1em; }
-    .historia h1 { font-size: 2.35em; }
+    .imgHistoria { width: 95%; }
     
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 2em; }
-    h4 { font-size: 1.25em; }        
-    .py-4 { padding-top: 1em!important; padding-bottom: 1em !important; }
-    .pb-4 { padding-bottom: 1.5em!important; }
-    label { font-size: 0.8em !important; }
-    .boton { font-size: 1em; }
-    .carrusel p { font-size: 1em; }
-    .carrusel.py-5 { padding-top: 1.5em!important; padding-bottom: 1.5em !important; }
-    .carrusel .my-4 { margin-top: 1em !important; margin-bottom: 1em !important; }            
-    .imgPersona { width: 15%; } 
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 2.5em; }
+    .tcomentarios h4 { font-size: 1.5em; }
+    label { font-size: 0.85em !important; }
+    .comentarios .btn { font-size: 0.85em; }
+    .imgPersona { width: 15% !important; }
     
-    /****************************** PIE DE PAGINA *****************************/
-    
-    footer a, footer ul li, .copyright { font-size: 0.75em!important; } 
-    footer h5 { font-size: 1.15em!important; }
-    .p-4 { padding: 1.25em!important; }
+    /* Pie de página */
+    footer h5 { font-size: 1.25em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.8em !important; }
+    footer .p-4 { padding: 1.25em !important; }
+    footer .py-3 { padding-top: 0.75em !important; padding-bottom: 0.75em !important; }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1423.98px) {
     
-    /****************************** HEADER *****************************************/
-            
-    .p-3 { padding: 1em !important; }
-    .w-100 { width: 80% !important; }
-    nav ul li a { font-size: 1em !important; }
-    .mx-4 { margin-left: 0.75em !important; margin-right: 0.75em !important; }
-    .px-4 { padding-left: 0.75em !important; padding-right: 0.75em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
-
+    /* Encabezado */
+    header .col-xl-4 { padding-left: 0; padding-right: 0; max-width: 20% }
+    header .p-4 { padding: 1em!important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 1em !important; margin: 0 1.4em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    
     /* Inicio */        
-    .jumbotron { padding: 1.75em !important; margin-bottom: 0.5em !important; margin-left: 1em !important; margin-right: 1em !important; }
-    .jumbotron .display-4 { font-size: 2.25em !important; }
-    .jumbotron .lead { font-size: 0.85em !important; }
-    .inicio .p-3 { padding: 0.5em !important; }
-   
-    /* Especialidades */    
-    .card-body h5 { font-size: 1.25em; }
-    .card-text { font-size: 0.85em !important; }
+    .jumbotron { padding: 1em !important; margin-bottom: 2em !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .jumbotron .display-4 { font-size: 2.5em !important; }
+    .jumbotron .lead { font-size: 1.25em !important; }
+    .inicio .p-3 { padding: 0.75em !important; }
+    
+    /* Especialidades */
     .especialidades h1 { font-size: 2.4em; }
-    .col-xl-4 { max-width: 31%; }
+    .card { width: 31% !important; }
+    .card-title { font-size: 1.25em !important; }
+    .card-text { font-size: 0.85em !important; }
+    .card-footer .btn { font-size: 0.85em; }
     
     /* Historia */
-    .historia h2 { font-size: 1.5em; }
-    .historia .mb-5 { margin-bottom: 1.5em!important }    
-    .figure-caption { font-size: 90% !important;}
-    .historia p { font-size: 0.85em; }
-    .historia h1 { font-size: 1.75em; }
+    .historia h1 { font-size: 2.4em; }
+    .historia h2 { font-size: 1.75em; }
+    .historia p { font-size: 1em; }
+    .imgHistoria { width: 95%; }
     
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 2em; }
-    h4 { font-size: 1.25em; }        
-    .py-4 { padding-top: 1em!important; padding-bottom: 1em !important; }
-    .pb-4 { padding-bottom: 1.5em!important; }
-    label { font-size: 0.8em !important; }
-    .boton { font-size: 1em; }
-    .carrusel p { font-size: 0.85em; }
-    .carrusel.py-5 { padding-top: 1.5em!important; padding-bottom: 1.5em !important; }
-    .carrusel .my-4 { margin-top: 1em !important; margin-bottom: 1em !important; }            
-    .imgPersona { width: 15%; }  
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 2.25em; }
+    .tcomentarios h4 { font-size: 1.25em; }
+    label { font-size: 0.75em !important; }
+    .comentarios .btn { font-size: 0.85em; }
+    .imgPersona { width: 15% !important; }
     
-    /****************************** PIE DE PAGINA *****************************/
-    
-    footer a, footer ul li, .copyright { font-size: 0.75em!important; } 
-    footer h5 { font-size: 1em!important; }
-    .p-4 { padding: 1.25em!important; }
+    /* Pie de página */
+    footer h5 { font-size: 1em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.75em !important; }
+    footer .p-4 { padding: 1em !important; }
+    footer .py-3 { padding-top: 0.75em !important; padding-bottom: 0.75em !important; }    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
-    /****************************** HEADER *****************************************/
-        
-    .p-3 { padding: 0.75em !important; }
-    .w-100 { width: 85% !important; }
-    nav ul li a { font-size: 0.85em !important; }
-    .mx-4 { margin-left: 0.5em !important; margin-right: 0.5em !important; }
-    .px-4 { padding-left: 0.5em !important; padding-right: 0.5em !important; }
-
-    /****************************** SECCION PRINCIPAL ******************************/
+    /* Encabezado */
+    header .col-lg-4 { padding-left: 0; padding-right: 0; max-width: 20%; }
+    header .p-4 { padding: 1em!important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: none; }
+    .menu ul { display: flex; flex-direction: row; }
+    .menu ul li { font-size: 0.9em !important; margin: 0 0.9em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
     
     /* Inicio */        
-    .jumbotron { padding: 1.5em !important; margin-bottom: 0.5em !important; margin-left: 1em !important; margin-right: 1em !important; }
-    .jumbotron .display-4 { font-size: 2em !important; }
-    .jumbotron .lead { font-size: 0.85em !important; }
+    .jumbotron { padding: 1em !important; margin-bottom: 0 !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .jumbotron .display-4 { font-size: 2.25em !important; }
+    .jumbotron .lead { font-size: 1em !important; }
     .inicio .p-3 { padding: 0.5em !important; }
     
-    /* Especialidades */    
-    .card-body h5 { font-size: 1.25em; }
-    .card-text { font-size: 0.85em !important; }
-    .especialidades h1 { font-size: 1.95em; }
-    .col-lg-4 { max-width: 31%; }
+    /* Especialidades */
+    .especialidades h1 { font-size: 2.15em; }
+    .card { width: 31% !important; }
+    .card-title { font-size: 1em !important; }
+    .card-text { font-size: 0.75em !important; }
+    .card-footer .btn { font-size: 0.8em; }
     
-    /* Historia */ 
-    .historia h2 { font-size: 1.25em; }
-    .historia .mb-5 { margin-bottom: 1em!important }    
-    .figure-caption { font-size: 90% !important;}
-    .historia p { font-size: 0.85em; }
-    .historia h1 { font-size: 1.4em; }
+    /* Historia */
+    .historia h1 { font-size: 2em; }
+    .historia h2 { font-size: 1.5em; }
+    .historia p { font-size: 1em; }
+    .imgHistoria { width: 90%; }
     
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 1.75em; }
-    h4 { font-size: 1.15em; }        
-    .py-4 { padding-top: 1em!important; padding-bottom: 1em !important; }
-    .pb-4 { padding-bottom: 1.5em!important; }
-    label { font-size: 0.8em !important; }
-    .boton { font-size: 1em; }
-    .carrusel p { font-size: 0.75em; }
-    .carrusel.py-5 { padding-top: 1.5em!important; padding-bottom: 1.5em !important; }
-    .carrusel .my-4 { margin-top: 1em !important; margin-bottom: 1em !important; }            
-    .imgPersona { width: 15%; }  
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 2.25em; }
+    .tcomentarios h4 { font-size: 1.25em; }
+    label { font-size: 0.7em !important; }
+    .comentarios .btn { font-size: 0.8em; }
+    .imgPersona { width: 15% !important; }
     
-    /****************************** PIE DE PAGINA **********************************/
-
-    footer a, footer ul li, .copyright { font-size: 0.75em!important; } 
-    footer h5 { font-size: 0.9em!important; }
-    .p-4 { padding: 1em!important; }        
+    /* Pie de página */
+    footer h5 { font-size: 1em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.75em !important; }
+    footer .p-4 { padding: 1em !important; }
+    footer .py-3 { padding-top: 0.65em !important; padding-bottom: 0.65em !important; }         
 }
  
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     
-    /****************************** HEADER *****************************************/
-
-    .p-3 { padding: 0.75em !important; }   
-    .w-100 { width: 85% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }
-    nav ul li a { font-size: 0.85em !important; }     
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }     
-    .btn { font-size: 2em; }
+    /* Encabezado */
+    header .col-md-4 { padding-left: 0; padding-right: 0; max-width: 25%; }
+    header .p-4 { padding: 0.75em!important; }
     
-    /****************************** SECCION PRINCIPAL ******************************/        
-       
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.75em; }
+    .btnMenu.mr-5 { margin-right: 1.5em !important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: center; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: row; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.8em !important; margin: 0 1em; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+    
     /* Inicio */        
-    .jumbotron { padding: 1.25em !important; margin-bottom: 0.5em !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
-    .jumbotron .display-4 { font-size: 1.75em !important; }
-    .jumbotron .lead { font-size: 0.75em !important; }
-    .inicio .p-3 { padding: 0.5em !important; }     
+    .jumbotron { padding: 1em !important; margin-bottom: 0 !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .jumbotron .display-4 { font-size: 2em !important; }
+    .jumbotron .lead { font-size: 1em !important; }
+    .inicio .p-3 { padding: 0.25em !important; }
     
-    /* Especialidades */            
-    .card-body h5 { font-size: 1.15em; }
+    /* Especialidades */
+    .especialidades h1 { font-size: 1.90em; }
+    .card { width: 47% !important; }
+    .card-title { font-size: 1em !important; }
     .card-text { font-size: 0.75em !important; }
-    .especialidades h1 { font-size: 1.55em; }
-    .col-md-6 { max-width: 47%; }
+    .card-footer .btn { font-size: 0.8em; }
     
     /* Historia */
+    .historia h1 { font-size: 1.90em; }
     .historia h2 { font-size: 1.25em; }
-    .historia .mb-5 { margin-bottom: 1em!important }    
-    .figure-caption { font-size: 90% !important;}
     .historia p { font-size: 0.75em; }
-    .historia h1 { font-size: 1.7em; }
-                        
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 1.5em; }
-    h4 { font-size: 1em; }        
-    .py-4 { padding-top: 0.75em!important; padding-bottom: 0.75em !important; }
-    .pb-4 { padding-bottom: 1em!important; }
-    label { font-size: 0.75em !important; }
-    .boton { font-size: 1em; }
-    .carrusel p { font-size: 0.75em; }
-    .carrusel.py-5 { padding-top: 1em!important; padding-bottom: 1em !important; }
-    .carrusel .my-4 { margin-top: 0.75em !important; margin-bottom: 0.75em !important; }            
-    .imgPersona { width: 15%; }  
-
-    /****************************** PIE DE PAGINA **********************************/
+    .imgHistoria { width: 90%; }
     
-    footer a, footer ul li, .copyright { font-size: 0.65em!important; } 
-    footer h5 { font-size: 0.8em!important; }
-    .p-4 { padding: 0.85em!important; }    
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 1.75em; }
+    .tcomentarios h4 { font-size: 1em; }
+    label { font-size: 0.7em !important; }
+    .comentarios .btn { font-size: 0.8em; }
+    .imgPersona { width: 15% !important; }
+    
+    /* Pie de página */
+    footer h5 { font-size: 1em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.65em !important; }
+    footer .p-4 { padding: 1em !important; }
+    footer .py-3 { padding-top: 0.6em !important; padding-bottom: 0.6em !important; }    
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-
-    /****************************** HEADER *****************************************/
-
-    .p-3 { padding: 0.75em !important; }   
-    .w-100 { width: 85% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }
-    nav ul li a { font-size: 0.85em !important; }     
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }     
-    .btn { font-size: 2em; }
     
-    /****************************** SECCION PRINCIPAL ******************************/        
-       
+    /* Encabezado */
+    header .col-sm-6 { padding-left: 0; padding-right: 0; max-width: 30%; }
+    header .p-4 { padding: 0.75em !important; }
+    
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.75em; }
+    .btnMenu.mr-5 { margin-right: 1.5em !important; }
+    
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.7em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+    
     /* Inicio */        
-    .jumbotron { padding: 1.25em !important; margin-bottom: 0.5em !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .jumbotron { padding: 1em !important; margin-bottom: 0 !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
     .jumbotron .display-4 { font-size: 1.75em !important; }
     .jumbotron .lead { font-size: 0.75em !important; }
-    .inicio .p-3 { padding: 0.5em !important; }     
+    .inicio .p-3 { padding: 0.25em !important; }
     
-    /* Especialidades */            
-    .card-body h5 { font-size: 1.15em; }
+    /* Especialidades */
+    .especialidades h1 { font-size: 1.75em; }
+    .card { width: 47% !important; }
+    .card-title { font-size: 1em !important; }
     .card-text { font-size: 0.75em !important; }
-    .especialidades h1 { font-size: 1.55em; }
-    .col-md-6 { max-width: 47%; }
+    .card-footer .btn { font-size: 0.75em; }
     
     /* Historia */
-    .historia h2 { font-size: 1em; }
-    .historia .mb-5 { margin-bottom: 1em!important }    
-    .figure-caption { font-size: 90% !important;}
+    .historia h1 { font-size: 1.75em; }
+    .historia h2 { font-size: 1.25em; }
     .historia p { font-size: 0.75em; }
-    .historia h1 { font-size: 1.25em; }
-                        
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 1.5em; }
-    h4 { font-size: 1em; }        
-    .py-4 { padding-top: 0.75em!important; padding-bottom: 0.75em !important; }
-    .pb-4 { padding-bottom: 1em!important; }
-    label { font-size: 0.75em !important; }
-    .boton { font-size: 1em; }
-    .carrusel p { font-size: 0.75em; }
-    .carrusel.py-5 { padding-top: 1em!important; padding-bottom: 1em !important; }
-    .carrusel .my-4 { margin-top: 0.75em !important; margin-bottom: 0.75em !important; }            
-    .imgPersona { width: 15%; }          
+    .imgHistoria { width: 90%; }
     
-    /****************************** PIE DE PAGINA **********************************/
-
-    footer a, footer ul li, .copyright { font-size: 0.65em!important; } 
-    footer h5 { font-size: 0.85em!important; }
-    .p-4 { padding: 0.75em!important; }
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 1.75em; }
+    .tcomentarios h4 { font-size: 1em; }
+    label { font-size: 0.7em !important; }
+    .comentarios .btn { font-size: 0.75em; }
+    
+    /* Pie de página */
+    footer h5 { font-size: 0.75em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.5em !important; }
+    footer .p-4 { padding: 0.75em !important; }
+    footer .py-3 { padding-top: 0.5em !important; padding-bottom: 0.5em !important; }
 }
 
-@media screen and (max-width: 575.98px) {
+/* Estilo para dispositivos con tamaño de pantalla menor que 576px */
+@media screen and (min-width: 481px) and (max-width: 575.98px) {
     
-    /****************************** HEADER *****************************************/
+    /* Encabezado */
+    header .col-6 { padding-left: 0; padding-right: 0; max-width: 35%; }
+    header .p-4 { padding: 0.75em!important; }
     
-    .p-3 { padding: 0.5em !important; }
-    .w-100 { width: 100% !important; }
-    .nav { flex-wrap: nowrap; border-top: 1px solid #000;}
-    nav ul {justify-content: space-around; padding-top: 0.5em; margin-top: 0.5em; }    
-    nav ul li a { font-size: 0.7em !important; }        
-    .mx-4 { margin-left: 0.25em !important; margin-right: 0.25em !important; }
-    .px-4 { padding-left: 0.25em !important; padding-right: 0.25em !important; }    
-    .btn { font-size: 1.5em; }
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.5em; }
+/*    .btnMenu.mr-5 { margin-right: 1.5em !important; }*/
     
-    /****************************** SECCION PRINCIPAL ******************************/
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column;  padding-top: 0.5em; }
+    .menu ul li { font-size: 0.65em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
+    
+    /* Inicio */        
+    .jumbotron { padding: 1em !important; margin-bottom: 0 !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
+    .jumbotron .display-4 { font-size: 1.75em !important; }
+    .jumbotron .lead { font-size: 0.75em !important; }
+    .inicio .p-3 { padding: 0.25em !important; }
+    
+    /* Especialidades */
+    .especialidades h1 { font-size: 1.75em; }
+    .card { width: 90% !important; }
+    .card-title { font-size: 1em !important; }
+    .card-text { font-size: 0.75em !important; }
+    .card-footer { font-size: 0.85em; }
+    
+    /* Historia */
+    .historia h1 { font-size: 1.75em; }
+    .historia h2 { font-size: 1.25em; }
+    .historia p { font-size: 0.75em; }
+    
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 1.75em; }
+    .tcomentarios h4 { font-size: 1em; }        
+    label { font-size: 0.7em !important; }
+    .comentarios .btn { font-size: 0.75em; }
+    
+    /* Pie de página */
+    footer h5 { font-size: 0.75em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.5em !important; }
+    footer .p-4 { padding: 0.75em !important; }
+    footer .py-3 { padding-top: 0.5em !important; padding-bottom: 0.5em !important; }    
+}
+
+/* Estilo para dispositivos con tamaño de pantalla menor que 480px */
+@media screen and (max-width: 480px) {
+    
+    /* Encabezado */
+    header .col-6 { padding-left: 0; padding-right: 0; max-width: 40%; }
+    header .p-4 { padding: 0.75em!important; }
+    
+    /* Botón del menú */
+    .btnMenu i { font-size: 1.5em; }
+/*    .btnMenu.mr-5 { margin-right: 1.5em !important; }*/
+    
+    /* Menú */
+    .menu { display: flex; justify-content: flex-start; border-top: 1px solid #000; }
+    .menu ul { display: flex; flex-direction: column; padding-top: 0.5em; }
+    .menu ul li { font-size: 0.6em !important; margin: 0; }
+    .menu ul li a { padding-left: 1.25em; padding-right: 1.25em; }
+    .menu .text-white { color: #000 !important; }
+    .menu .nav .nav-item .nav-link:hover { color: white !important; }
     
     /* Inicio */        
     .jumbotron { padding: 1em !important; margin-bottom: 0 !important; margin-left: 0.75em !important; margin-right: 0.75em !important; }
     .jumbotron .display-4 { font-size: 1.5em !important; }
     .jumbotron .lead { font-size: 0.75em !important; }
-    .inicio .p-3 { padding: 0.35em !important; } 
+    .inicio .p-3 { padding: 0.25em !important; }
     
-    /* Especialidades */    
-    .card-body h5 { font-size: 0.85em; }
-    .card-text { font-size: 0.65em !important; } 
-    .especialidades h1 { font-size: 1em; }
-    .col-6 { max-width: 46%; }
+    /* Especialidades */
+    .especialidades h1 { font-size: 1.5em; }
+    .card { width: 90% !important; }
+    .card-title { font-size: 1em !important; }
+    .card-text { font-size: 0.75em !important; }
+    .card-footer { font-size: 0.85em; }
     
-    /* Historia */ 
+    /* Historia */
+    .historia h1 { font-size: 1.5em; }
     .historia h2 { font-size: 1em; }
-    .historia .mb-5 { margin-bottom: 1em!important }    
-    .figure-caption { font-size: 85% !important;}
     .historia p { font-size: 0.75em; }
-    .historia h1 { font-size: 1em; }
     
-    /* Comentarios y carrusel de imagenes */
-    h1 { font-size: 1em; }
-    h4 { font-size: 0.75em; }        
-    .py-4 { padding-top: 0.75em!important; padding-bottom: 0.75em !important; }
-    .pb-4 { padding-bottom: 0.75em!important; }
-    label { font-size: 0.75em !important; }
-    .boton { font-size: 0.75em; }
-    .carrusel p { font-size: 0.5em; }
-    .carrusel.py-5 { padding-top: 0.75em!important; padding-bottom: 0.75em !important; }
-    .carrusel .my-4 { margin-top: 0.75em !important; margin-bottom: 0.75em !important; }            
-    .imgPersona { width: 15%; } 
+    /* Comentarios */
+    .tcomentarios h1 { font-size: 1.5em; }
+    .tcomentarios h4 { font-size: 1em; }        
+    label { font-size: 0.7em !important; }
+    .comentarios .btn { font-size: 0.75em; }
     
-    /****************************** PIE DE PAGINA **********************************/
-    
-    footer a, footer ul li, .copyright { font-size: 0.65em!important; } 
-    footer h5 { font-size: 0.75em!important; }
-    .p-4 { padding: 0.75em!important; }
+    /* Pie de página */
+    footer h5 { font-size: 0.75em !important; }
+    footer a, footer ul li, .copyright { font-size: 0.5em !important; }
+    footer .p-4 { padding: 0.5em !important; }
+    footer .py-3 { padding-top: 0.5em !important; padding-bottom: 0.5em !important; }
 }
